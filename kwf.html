@@ -1,0 +1,448 @@
+<!-- kwf.html -->
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>บริษัท คิงเวลล์ เฟิร์ส จำกัด - ผู้นำด้านห้องเย็นและอาหารแปรรูป</title>
+    <meta name="description" content="ผู้นำด้านห้องเย็นและอาหารแปรรูปคุณภาพสูง ได้รับการรับรองมาตรฐาน ISO 22000, HACCP, และ GMP">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="kwf.css">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-lg">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#services">บริการ</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#contact">ติดต่อ</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl">คิงเวลล์ เฟิร์ส</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#services">บริการ</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero min-h-screen" style="background-image: url('/api/placeholder/1200/800');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">คิงเวลล์ เฟิร์ส</h1>
+                <p class="mb-5">ผู้นำด้านห้องเย็นและอาหารแปรรูปคุณภาพสูง ได้รับการรับรองมาตรฐาน ISO 22000, HACCP, และ GMP</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#services" class="btn btn-primary">ดูบริการของเรา</a>
+                    <a href="#about" class="btn btn-outline btn-light">เยี่ยมชมโรงงาน</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seafood Processing Section -->
+    <section id="seafood" class="py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-6">Seafood Processing Excellence</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto">เรามีความเชี่ยวชาญในการแปรรูปอาหารทะเลคุณภาพสูง ด้วยเทคโนโลยีทันสมัยและมาตรฐานความปลอดภัยระดับสากล</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Sole Fish -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-4 pt-4">
+                        <img src="/api/placeholder/400/300" alt="ปลาโซล แปรรูป" class="rounded-xl h-64 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Processed Sole Fish
+                            <div class="badge badge-secondary">Premium</div>
+                        </h3>
+                        <div class="space-y-2">
+                            <p>ปลาโซลแปรรูปคุณภาพพรีเมียม</p>
+                            <ul class="list-disc pl-4 space-y-1">
+                                <li>ปลาโซลแล่แช่แข็ง IQF</li>
+                                <li>เนื้อปลาโซลชุบเกล็ดขนมปัง</li>
+                                <li>ปลาโซลหั่นชิ้นพร้อมปรุง</li>
+                            </ul>
+                            <div class="text-sm mt-2">
+                                <span class="font-semibold">Production Capacity:</span> 1,000 ตัน/เดือน
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saba Fish -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-4 pt-4">
+                        <img src="/api/placeholder/400/300" alt="ปลาซาบะ แปรรูป" class="rounded-xl h-64 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Processed Saba Fish
+                            <div class="badge badge-secondary">Premium</div>
+                        </h3>
+                        <div class="space-y-2">
+                            <p>ปลาซาบะแปรรูปคุณภาพสูง</p>
+                            <ul class="list-disc pl-4 space-y-1">
+                                <li>ปลาซาบะแล่แช่แข็ง IQF</li>
+                                <li>ปลาซาบะย่างเทริยากิ</li>
+                                <li>ปลาซาบะซอสมิโซะ</li>
+                            </ul>
+                            <div class="text-sm mt-2">
+                                <span class="font-semibold">Production Capacity:</span> 800 ตัน/เดือน
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shell Fish -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-4 pt-4">
+                        <img src="/api/placeholder/400/300" alt="หอยเชลล์ แปรรูป" class="rounded-xl h-64 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Processed Shell Fish
+                            <div class="badge badge-secondary">Premium</div>
+                        </h3>
+                        <div class="space-y-2">
+                            <p>หอยเชลล์แปรรูปคุณภาพพรีเมียม</p>
+                            <ul class="list-disc pl-4 space-y-1">
+                                <li>เนื้อหอยเชลล์แช่แข็ง IQF</li>
+                                <li>หอยเชลล์ครึ่งเปลือก</li>
+                                <li>หอยเชลล์พร้อมปรุง</li>
+                            </ul>
+                            <div class="text-sm mt-2">
+                                <span class="font-semibold">Production Capacity:</span> 500 ตัน/เดือน
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Processing Standards -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">มาตรฐานการแปรรูป</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center space-y-2">
+                        <div class="bg-blue-100 rounded-full p-4 mx-auto w-20 h-20 flex items-center justify-center">
+                            <span class="text-3xl">🌡️</span>
+                        </div>
+                        <h4 class="font-semibold">Temperature Control</h4>
+                        <p class="text-sm">ควบคุมอุณหภูมิตลอดกระบวนการผลิต -18°C ถึง -25°C</p>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <div class="bg-blue-100 rounded-full p-4 mx-auto w-20 h-20 flex items-center justify-center">
+                            <span class="text-3xl">🔍</span>
+                        </div>
+                        <h4 class="font-semibold">Quality Inspection</h4>
+                        <p class="text-sm">ตรวจสอบคุณภาพทุกขั้นตอนด้วยระบบ HACCP</p>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <div class="bg-blue-100 rounded-full p-4 mx-auto w-20 h-20 flex items-center justify-center">
+                            <span class="text-3xl">📦</span>
+                        </div>
+                        <h4 class="font-semibold">IQF Technology</h4>
+                        <p class="text-sm">แช่แข็งแบบ Individual Quick Freezing</p>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <div class="bg-blue-100 rounded-full p-4 mx-auto w-20 h-20 flex items-center justify-center">
+                            <span class="text-3xl">🔬</span>
+                        </div>
+                        <h4 class="font-semibold">Lab Testing</h4>
+                        <p class="text-sm">ทดสอบคุณภาพในห้องปฏิบัติการที่ได้มาตรฐาน ISO/IEC 17025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cold Storage -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/api/placeholder/400/300" alt="ห้องเย็น" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Cold Storage Solutions</h2>
+                        <p>ให้บริการห้องเย็นที่ได้มาตรฐาน GMP และ HACCP พร้อมระบบควบคุมอุณหภูมิแบบ Real-time Monitoring</p>
+                        <ul class="mt-4 space-y-2">
+                            <li>• ระบบควบคุมอุณหภูมิแม่นยำ -40°C ถึง +20°C</li>
+                            <li>• พื้นที่จัดเก็บรวมกว่า 50,000 ตารางเมตร</li>
+                            <li>• ระบบจัดการสินค้าคงคลัง WMS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Food Processing -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/api/placeholder/400/300" alt="แปรรูปอาหาร" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Food Processing Excellence</h2>
+                        <p>บริการแปรรูปอาหารด้วยเทคโนโลยีและมาตรฐานระดับโลก</p>
+                        <ul class="mt-4 space-y-2">
+                            <li>• แปรรูปผักและผลไม้ IQF</li>
+                            <li>• ผลิตอาหารพร้อมทาน</li>
+                            <li>• บรรจุภัณฑ์แบบ Modified Atmosphere</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Logistics -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/api/placeholder/400/300" alt="ขนส่ง" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Temperature Controlled Logistics</h2>
+                        <p>บริการขนส่งควบคุมอุณหภูมิที่ได้มาตรฐาน GDP ครอบคลุมทั่วประเทศ</p>
+                        <ul class="mt-4 space-y-2">
+                            <li>• ระบบติดตาม GPS Real-time</li>
+                            <li>• รถห้องเย็นมาตรฐาน HACCP</li>
+                            <li>• บริการขนส่งแบบ Last Mile Delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-base-200">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="/api/placeholder/600/400" alt="เกี่ยวกับเรา" class="rounded-lg shadow-2xl" />
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">เกี่ยวกับเรา</h2>
+                    <div class="space-y-4">
+                        <p>บริษัท คิงเวลล์ เฟิร์ส จำกัด ก่อตั้งในปี 2545 เป็นผู้นำด้านการให้บริการห้องเย็นและแปรรูปอาหารที่ได้มาตรฐานระดับสากล</p>
+                        <p>เราภูมิใจที่ได้รับการรับรองมาตรฐานระดับโลก:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>ISO 22000:2018 Food Safety Management</li>
+                            <li>FSSC 22000 Version 5.1</li>
+                            <li>GMP/HACCP Codex Alimentarius</li>
+                            <li>BRC Global Standard for Food Safety Issue 9</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 space-x-4">
+                        <button class="btn btn-primary">Company Profile</button>
+                        <button class="btn btn-outline">Sustainability Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-b from-base-200 to-base-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">ติดต่อเรา</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Contact Info -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div class="card-body">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">ข้อมูลการติดต่อ</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold mb-2">สำนักงานใหญ่และโรงงาน</h4>
+                                <p class="text-sm">318 หมู่ 5 ตำบลโคกขาม<br/>
+                                อำเภอเมืองสมุทรสาคร<br/>
+                                จังหวัดสมุทรสาคร 74000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold mb-1">โทรศัพท์</h4>
+                                <p class="text-sm">034-498535, 034-458545, 034-879536</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold mb-1">อีเมล</h4>
+                                <p class="text-sm">info@kingwellfirst.co.th</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div class="card-body">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">ส่งข้อความถึงเรา</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-medium">ชื่อ</span>
+                            </label>
+                            <input type="text" placeholder="กรุณากรอกชื่อของคุณ" class="input input-bordered w-full focus:input-primary" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-medium">อีเมล</span>
+                            </label>
+                            <input type="email" placeholder="example@email.com" class="input input-bordered w-full focus:input-primary" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-medium">ข้อความ</span>
+                            </label>
+                            <textarea placeholder="กรุณากรอกข้อความของคุณ" class="textarea textarea-bordered h-32 focus:textarea-primary" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full hover:btn-secondary transition-colors duration-300">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Map Section -->
+            <div class="mt-12 bg-base-100 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-6 bg-gradient-to-r from-primary/10 to-secondary/10">
+                    <h3 class="text-2xl font-bold mb-4">แผนที่และตำแหน่งที่ตั้ง</h3>
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <div class="badge badge-primary gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            สำนักงานใหญ่
+                        </div>
+                        <div class="badge badge-secondary gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            โรงงาน
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container group">
+                    <div class="relative">
+                        <!-- Loading Overlay -->
+                        <div class="absolute inset-0 bg-base-200 animate-pulse z-10 opacity-0 group-hover:opacity-0 transition-opacity pointer-events-none">
+                            </div>
+                        </div>
+                        
+                        <!-- Map Frame -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.480546047664!2d100.3104135!3d13.5674265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2b9af4dc42a49%3A0xf43a91708bed3683!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4hOC4tOC4h-C5gOC4p-C4peC4peC5jCDguYDguJ_guLTguKPguYzguKog4LiI4Liz4LiB4Lix4LiUIEtpbmd3ZWxsIGZpcnN0IGNvLixsdGQ!5e0!3m2!1sen!2sth!4v1735108618270!5m2!1sen!2sth" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            class="z-0 transition-all duration-300 group-hover:brightness-105">
+                        </iframe>
+                        
+                        <!-- Map Controls -->
+                        <div class="absolute bottom-4 right-4 flex gap-2">
+                            <button class="btn btn-circle btn-sm bg-base-100 hover:bg-primary hover:text-white transition-colors" onclick="zoomMap(1)">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                </svg>
+                            </button>
+                            <button class="btn btn-circle btn-sm bg-base-100 hover:bg-primary hover:text-white transition-colors" onclick="zoomMap(-1)">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Location Info Cards -->
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body">
+                                <h3 class="card-title text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                    สำนักงานใหญ่
+                                </h3>
+                                <p class="text-sm opacity-75">318 หมู่ 5 ตำบลโคกขาม อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
+                                <div class="flex gap-2 mt-2">
+                                    <a href="tel:+6634-498535" class="btn btn-sm btn-outline btn-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        โทร
+                                    </a>
+                                    <button class="btn btn-sm btn-outline" onclick="copyAddress('head-office')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                        </svg>
+                                        คัดลอกที่อยู่
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body">
+                                <h3 class="card-title text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                    โรงงาน
+                                </h3>
+                                <p class="text-sm opacity-75">318 หมู่ 5 ตำบลโคกขาม อำเภอเมืองสมุทรสาคร จ.สมุทรสาคร 74000</p>
+                                <div class="flex gap-2 mt-2">
+                                    <a href="tel:+6638123456" class="btn btn-sm btn-outline btn-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        โทร
+                                    </a>
+                                    <button class="btn btn-sm btn-outline" onclick="copyAddress('factory')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                        </svg>
+                                        คัดลอกที่อยู่
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+        <div>
+            <p class="font-bold">บริษัท คิงเวลล์ เฟิร์ส จำกัด</p>
+            <p>ผู้นำด้านห้องเย็นและอาหารแปรรูป</p>
+            <p>Copyright © 2024 - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="kwf.js"></script>
+</body>
+</html>

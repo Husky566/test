@@ -1,0 +1,367 @@
+/* ======================================
+   * ฟอนต์และการตั้งค่าพื้นฐาน
+   ====================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+   :root {
+       --header-height: 64px;
+       --section-spacing: 3rem;
+       --card-spacing: 1.5rem;
+   }
+   
+   body {
+       font-family: 'Kanit', sans-serif;
+       line-height: 1.6;
+       color: var(--text-base-content);
+       font-size: 16px;
+   }
+   
+   /* ======================================
+      * Layout และ Container
+      ====================================== */
+   .container {
+       width: 100%;
+       margin-inline: auto;
+       padding-inline: 1rem;
+   }
+   
+   @media (min-width: 640px) {
+       .container {
+           max-width: 640px;
+           padding-inline: 1.5rem;
+       }
+   }
+   
+   @media (min-width: 768px) {
+       .container {
+           max-width: 768px;
+           padding-inline: 2rem;
+       }
+   }
+   
+   @media (min-width: 1024px) {
+       .container {
+           max-width: 1024px;
+           padding-inline: 2.5rem;
+       }
+   }
+   
+   @media (min-width: 1280px) {
+       .container { max-width: 1280px; }
+   }
+   
+   /* ======================================
+      * Typography
+      ====================================== */
+   h1, h2, h3, h4, h5, h6 {
+       font-weight: 700;
+       line-height: 1.2;
+   }
+   
+   h1 { font-size: 2.5rem; }
+   h2 { font-size: 2rem; }
+   h3 { font-size: 1.75rem; }
+   h4 { font-size: 1.5rem; }
+   h5 { font-size: 1.25rem; }
+   h6 { font-size: 1rem; }
+   
+   @media (max-width: 768px) {
+       body { font-size: 14px; }
+       h1 { font-size: 2rem; }
+       h2 { font-size: 1.75rem; }
+       h3 { font-size: 1.5rem; }
+       h4 { font-size: 1.25rem; }
+       h5 { font-size: 1rem; }
+       h6 { font-size: 0.875rem; }
+   }
+   
+   /* ======================================
+      * Components - Cards
+      ====================================== */
+   .card {
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   
+   .card:hover {
+       transform: translateY(-2px);
+   }
+   
+   .card-body {
+       flex: 1;
+       padding: var(--card-spacing);
+   }
+   
+   /* ======================================
+      * Components - Images
+      ====================================== */
+   .img-responsive {
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+   }
+   
+   @media (max-width: 640px) {
+       .img-responsive {
+           height: 200px;
+       }
+   }
+   
+   /* ======================================
+      * Components - Navigation
+      ====================================== */
+   .navbar {
+       position: sticky;
+       top: 0;
+       z-index: 100;
+       height: var(--header-height);
+       padding: 0.5rem 1rem;
+       background: var(--base-100);
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   @media (max-width: 1024px) {
+       .navbar-end {
+           display: none;
+       }
+       .navbar {
+           height: auto;
+           padding: 0.75rem;
+       }
+   }
+   
+   /* ======================================
+      * Components - Buttons
+      ====================================== */
+   .btn-group {
+       display: flex;
+       gap: 0.5rem;
+   }
+   
+   @media (max-width: 640px) {
+       .btn-group {
+           flex-direction: column;
+       }
+       
+       .btn {
+           width: 100%;
+           padding: 0.75rem 1rem;
+       }
+   }
+   
+   /* ======================================
+      * Components - Forms
+      ====================================== */
+   .form-control {
+       margin-bottom: 1rem;
+   }
+   
+   @media (max-width: 640px) {
+       .form-control input,
+       .form-control textarea {
+           font-size: 16px;
+           padding: 0.75rem;
+       }
+   }
+   
+   /* ======================================
+      * Components - Grid
+      ====================================== */
+   .grid-responsive {
+       display: grid;
+       gap: 1.5rem;
+   }
+   
+   @media (min-width: 640px) {
+       .grid-responsive {
+           grid-template-columns: repeat(2, 1fr);
+       }
+   }
+   
+   @media (min-width: 1024px) {
+       .grid-responsive {
+           grid-template-columns: repeat(3, 1fr);
+       }
+   }
+   
+   /* ======================================
+      * Components - Map Section
+      ====================================== */
+   .map-section {
+       margin-top: 2rem;
+       border-radius: 1rem;
+       overflow: hidden;
+       background: var(--base-100);
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   .map-container {
+       position: relative;
+       transition: transform 0.3s ease;
+   }
+   
+   .map-container:hover {
+       transform: translateY(-2px);
+   }
+   
+   .map-header {
+       padding: 1.5rem;
+       background: linear-gradient(
+           to right,
+           rgba(var(--primary-rgb), 0.1),
+           rgba(var(--secondary-rgb), 0.1)
+       );
+   }
+   
+   .map-frame {
+       width: 100%;
+       height: 450px;
+       border: 0;
+       transition: filter 0.3s ease;
+   }
+   
+   .map-frame:hover {
+       filter: brightness(1.05);
+   }
+   
+   .map-controls {
+       position: absolute;
+       bottom: 1rem;
+       right: 1rem;
+       display: flex;
+       gap: 0.5rem;
+       z-index: 10;
+   }
+   
+   .map-info {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+       gap: 1.5rem;
+       padding: 1.5rem;
+   }
+   
+   .info-card {
+       padding: 1.5rem;
+       border-radius: 0.5rem;
+       background: white;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+       transition: all 0.3s ease;
+   }
+   
+   .info-card:hover {
+       transform: translateY(-2px);
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   /* Loading Animation */
+   @keyframes pulse {
+       0% { opacity: 0.6; }
+       50% { opacity: 1; }
+       100% { opacity: 0.6; }
+   }
+   
+   .loading {
+       animation: pulse 1.5s infinite;
+   }
+   
+   /* ======================================
+      * Utilities
+      ====================================== */
+   .hover-scale {
+       transition: transform 0.3s ease;
+   }
+   
+   .hover-scale:hover {
+       transform: scale(1.02);
+   }
+   
+   /* Scrollbar Styling */
+   ::-webkit-scrollbar {
+       width: 8px;
+   }
+   
+   ::-webkit-scrollbar-track {
+       background: var(--base-200);
+   }
+   
+   ::-webkit-scrollbar-thumb {
+       background: var(--base-300);
+       border-radius: 4px;
+   }
+   
+   ::-webkit-scrollbar-thumb:hover {
+       background: var(--base-400);
+   }
+   
+   /* ======================================
+      * Responsive Adjustments
+      ====================================== */
+   @media (max-width: 480px) {
+       :root {
+           --section-spacing: 1.5rem;
+           --card-spacing: 0.75rem;
+       }
+       
+       .container {
+           padding-inline: 0.75rem;
+       }
+       
+       .map-frame {
+           height: 300px;
+       }
+   }
+   
+   @media (min-width: 481px) and (max-width: 768px) {
+       :root {
+           --section-spacing: 2rem;
+           --card-spacing: 1rem;
+       }
+   
+       .map-frame {
+           height: 350px;
+       }
+       
+       .map-info {
+           grid-template-columns: 1fr;
+       }
+   }
+   
+   @media (min-width: 769px) and (max-width: 1024px) {
+       .map-frame {
+           height: 400px;
+       }
+   }
+   
+   @media (min-width: 1025px) {
+       :root {
+           --section-spacing: 4rem;
+           --card-spacing: 2rem;
+       }
+   }
+   
+   /* iPad specific adjustments */
+   @media only screen 
+   and (min-device-width: 768px) 
+   and (max-device-width: 1024px) 
+   and (-webkit-min-device-pixel-ratio: 2) {
+       .container {
+           max-width: 90%;
+       }
+       
+       .grid-responsive {
+           grid-template-columns: repeat(2, 1fr);
+       }
+   }
+   
+   /* Notebook and PC adjustments */
+   @media (min-width: 1280px) {
+       .container {
+           max-width: 1200px;
+       }
+       
+       .grid-responsive {
+           grid-template-columns: repeat(4, 1fr);
+       }
+   }
